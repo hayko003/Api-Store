@@ -4,26 +4,30 @@ import "../card/card.css";
 class Card extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { count: 0, price: this.props.elem.price };
+    this.state = { count: 1 };
     this.minus = this.minus.bind(this);
     this.plus = this.plus.bind(this);
-    // this.price = {price : this.props.elem.price}
   }
 
   minus() {
-    // this.setState({ count: --this.state.count });
-    // this.setState({price: --this.props.elem.price})
-
-      this.setState()
+    this.setState((prevState) => {
+      const newCount = prevState.count -1 ;
+      if (prevState.count < 1) {
+        return 
+      } 
+      return { count: newCount };
+    });
   }
 
   plus() {
-    // this.setState({ count: ++this.state.count});
-    // this.setState({price: this.props.elem.price  })
-
-  }
-
-  render() {
+      this.setState((prevState) => {
+        const newCount = prevState.count + 1;
+        return { count: newCount};
+      });
+    }
+    
+    render() {
+    const newPrice = this.props.elem.price * this.state.count;
     return (
       <div className="card">
         <div className="card_wrapper">
@@ -31,7 +35,7 @@ class Card extends React.Component {
           <div className="title_desc-wrapper">
             <h1 className="card_title">{this.props.elem.title}</h1>
             <p className="card_desc">{this.props.elem.category}</p>
-            <p className="card_price">{this.props.elem.price}$</p>
+            <p className="card_price">{newPrice}$</p>
             <div className="count_wrap">
               <button onClick={this.minus}>-</button>
               <button className="count_btn">{this.state.count}</button>

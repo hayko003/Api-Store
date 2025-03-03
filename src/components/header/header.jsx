@@ -11,9 +11,9 @@ class Header extends React.Component {
         <input className="header_input" type="text" />
         <div className="header_wrapper">
           <ul>
-            <li>Hello, sign in Account & Lists Returns & Orders 0 Cart</li>
+            <li>Hello, sign in Account</li>
             <li>Returns & Orders</li>
-            <li>KIDS</li>
+            <li><img style={{width: 30}} src="https://icon-library.com/images/cart-icon-png-white/cart-icon-png-white-16.jpg" alt="" srcset="" /></li>
           </ul>
         </div>
       </div>
