@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  border: 1px solid black;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  rgb(32, 0, 114);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  color: #fff;
+  cursor: pointer;
+  /* font-weight: 400;
+  outline: 0; */
+  padding: 15px;
+  width: 5px;
+  height: 5px;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+.count_btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: black;
+  cursor: auto;
+}
+
+.card_wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card_img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.title_desc-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card_desc {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.card_price {
+  font-weight: 600;
+  
+}
+
+.count_wrap {
+  display: flex;
+  gap: 2px;
+}
