@@ -28,15 +28,15 @@ import SectionFirst from "./components/section/sectionfirst";
 //   }
 // }
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header></Header>
-        <SectionFirst data={this.props.data}/>
-      </div>
-    );
-  }
+function App(data) {
+  return (
+    <div>
+      <Header></Header>
+      <SectionFirst data={data}/>
+    </div>
+  );
+  
 }
+  
 
 export default App;

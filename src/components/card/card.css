@@ -69,10 +69,39 @@ button {
 
 .card_price {
   font-weight: 600;
-  
+}
+
+.rate {
+  color: chocolate;
 }
 
 .count_wrap {
   display: flex;
   gap: 2px;
+}
+
+.wrapper_rate-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rate_star {
+  width: 25px;
+  transition: 0.05s ease-in-out;
+}
+
+.rate_star:hover {
+  fill: orange;
+} 
+
+.buy_btn-parent {
+  display: flex;
+}
+
+.buy_btn {
+  display: flex;
+  flex-grow: 1;
+  background-color: green;
+  border: none;
 }
